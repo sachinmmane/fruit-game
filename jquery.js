@@ -9,12 +9,12 @@ $(function(){
 	//Click on start reset button
 	$("#startreset").click(function(){
 		//if we are playing
-		console.log("line10");
+		
 		if(playing == true){
 			//reload page
-			location.reload();
+			
 		
-		}else { console.log("line11");
+		}else { 
 			//we are not playing
 			playing = true; //game initiated//
 			
@@ -41,8 +41,19 @@ $(function(){
 	$("#fruit1").mouseover(function(){
 		score++;
 		$("#scorevalue").html(score); //update the score
+//		document.getElementById("sliceSound").play();
+		$("#sliceSound")[0].play(); //play sound
 		
-	})
+		//stop fruit and hide
+		clearInterval(action);
+		
+		//hide fruit
+		$("#fruit1").hide("explode", 500); // slice fruit
+		
+		//send new fruit
+		setTimeout(startAction, 500);
+		
+	});
 	
 //slice a Fruit
 	//play sound
