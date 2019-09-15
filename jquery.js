@@ -11,8 +11,9 @@ $(function(){
 		//if we are playing
 		
 		if(playing == true){
-			//reload page
 			
+			//reload page
+		location.reload();
 		
 		}else { 
 			//we are not playing
