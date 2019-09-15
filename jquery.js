@@ -5,7 +5,7 @@ var step;
 var action;
 var fruits = ['banana', 'apple 2', 'apple', 'avocado', 'black graps', 'blueberry', 'Cantaloupe', 'cherry', 'graps', 'lemon', 'mango', 'orange', 'orangeberry', 'pinapple', 'pinkberry', 'redberry', 'strawberry', 'watermellon', 'redbery']
 $(function(){
-	console.log("line6");
+	
 	//Click on start reset button
 	$("#startreset").click(function(){
 		//if we are playing
